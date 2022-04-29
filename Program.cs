@@ -13,6 +13,7 @@ opcaoDesejada = Console.ReadLine()!;
 
 switch (opcaoDesejada)
 {
+    //****SOMA****
     case "+" :
      Console.WriteLine("Você selecionou soma");
      
@@ -32,12 +33,13 @@ switch (opcaoDesejada)
 
        break;
    
+    //****SUBTRAÇÃO****
     case "-":
      Console.WriteLine("Você selecionou subtração");
 
      double subtracao, subtracaoA, subtracaoB;
     
-     Console.WriteLine("Digite os valores para A + B :");
+     Console.WriteLine("Digite os valores para A - B :");
      
      Console.Write("A =");
      subtracaoA = Convert.ToDouble(Console.ReadLine()!);
@@ -50,6 +52,48 @@ switch (opcaoDesejada)
      Console.WriteLine($"Resultado da subtracao: {subtracaoA} - {subtracaoB} = {subtracao}");
 
        break;
-      
 
+    //****MULTIPLICAÇÃO****  
+    case "*":
+     Console.WriteLine("Você selecionou multiplicação");
+
+     double multiplicação, multiplicaçãoA, multiplicaçãoB;
+
+     Console.WriteLine("Digite os valores para A * B :");
+     
+     Console.Write("A =");
+     multiplicaçãoA = Convert.ToDouble(Console.ReadLine()!);
+      
+     Console.Write("B =");
+     multiplicaçãoB = Convert.ToDouble(Console.ReadLine()!);
+     
+     multiplicação = multiplicaçãoA - multiplicaçãoB;
+     
+     Console.WriteLine($"Resultado da multiplicação: {multiplicaçãoA} X {multiplicaçãoB} = {multiplicação}");
+       
+       break;
+    
+    //****DIVISÃO**** 
+    case "/":
+     Console.WriteLine("Você selecionou Divisão");
+
+     double divisao, divisãoA, divisãoB;
+
+     Console.WriteLine("Digite os valores para A / B :");
+     
+     Console.Write("A =");
+     divisãoA = Convert.ToDouble(Console.ReadLine()!);
+      
+     Console.Write("B =");
+     divisãoB = Convert.ToDouble(Console.ReadLine()!);
+     
+     divisao = divisãoA - divisãoB;
+     
+     Console.WriteLine($"Resultado da dividido: {divisãoA} / {divisãoB} = {divisao}");
+       
+       break;
+
+    default:
+        Console.WriteLine("Você selecionou uma opção inválida.");
+    break;   
 }
