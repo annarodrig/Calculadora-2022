@@ -54,7 +54,7 @@ switch (opcaoDesejada)
        break;
 
     //****MULTIPLICAÇÃO****  
-    case "*":
+    case "x":
      Console.WriteLine("Você selecionou multiplicação");
 
      double multiplicação, multiplicaçãoA, multiplicaçãoB;
