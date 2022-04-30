@@ -13,7 +13,7 @@ opcaoDesejada = Console.ReadLine()!;
 
 switch (opcaoDesejada)
 {
-    //****SOMA****
+    //****CALCULA SOMA****
     case "+" :
      Console.WriteLine("Você selecionou soma");
      
@@ -33,7 +33,7 @@ switch (opcaoDesejada)
 
        break;
    
-    //****SUBTRAÇÃO****
+    //****CALCULA SUBTRAÇÃO****
     case "-":
      Console.WriteLine("Você selecionou subtração");
 
@@ -53,43 +53,43 @@ switch (opcaoDesejada)
 
        break;
 
-    //****MULTIPLICAÇÃO****  
+    //****CALCULA MULTIPLICAÇÃO****  
     case "x":
      Console.WriteLine("Você selecionou multiplicação");
 
-     double multiplicação, multiplicaçãoA, multiplicaçãoB;
+     double multiplicacao, multiplicacaoA, multiplicacaoB;
 
      Console.WriteLine("Digite os valores para A * B :");
      
      Console.Write("A =");
-     multiplicaçãoA = Convert.ToDouble(Console.ReadLine()!);
+     multiplicacaoA = Convert.ToDouble(Console.ReadLine()!);
       
      Console.Write("B =");
-     multiplicaçãoB = Convert.ToDouble(Console.ReadLine()!);
+     multiplicacaoB = Convert.ToDouble(Console.ReadLine()!);
      
-     multiplicação = multiplicaçãoA - multiplicaçãoB;
+     multiplicacao = multiplicacaoA * multiplicacaoB;
      
-     Console.WriteLine($"Resultado da multiplicação: {multiplicaçãoA} X {multiplicaçãoB} = {multiplicação}");
+     Console.WriteLine($"Resultado da multiplicação: {multiplicacaoA} X {multiplicacaoB} = {multiplicacao}");
        
        break;
     
-    //****DIVISÃO**** 
+    //****CALCULA DIVISÃO**** 
     case "/":
      Console.WriteLine("Você selecionou Divisão");
 
-     double divisao, divisãoA, divisãoB;
+     double divisao, divisaoA, divisaoB;
 
      Console.WriteLine("Digite os valores para A / B :");
      
      Console.Write("A =");
-     divisãoA = Convert.ToDouble(Console.ReadLine()!);
+     divisaoA = Convert.ToDouble(Console.ReadLine()!);
       
      Console.Write("B =");
-     divisãoB = Convert.ToDouble(Console.ReadLine()!);
+     divisaoB = Convert.ToDouble(Console.ReadLine()!);
      
-     divisao = divisãoA - divisãoB;
+     divisao = divisaoA - divisaoB;
      
-     Console.WriteLine($"Resultado da dividido: {divisãoA} / {divisãoB} = {divisao}");
+     Console.WriteLine($"Resultado da dividido: {divisaoA} / {divisaoB} = {divisao}");
        
        break;
 
